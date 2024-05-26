@@ -1,12 +1,15 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
+import Banner from '../../components/Banner/Banner'
+import Allservices from '../../components/Allservices/Allservices'
 
 export default function ServicesPage() {
   return (
     <>
     <Navbar/>
-    <p className='mt-28'>I AM A SERVICES COMPONENET</p>
+    <Banner title = "Services"/>
+    <Allservices/>
     <Footer/>
     </>
   )

@@ -1,13 +1,18 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import AboutusBanner from '../../components/AboutusBanner/AboutusBanner'
+import Banner from '../../components/Banner/Banner'
+import Whychooseus from '../../components/Whychooseus/Whychooseus'
 
 export default function AboutusPage() {
   return (
     <>
     <Navbar/>
-    <AboutusBanner/>
+    <Banner title = "Aboutus" />
+    
+
+    <Whychooseus/>
+
     <Footer/>
 
     </>
