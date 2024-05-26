@@ -1,0 +1,24 @@
+
+
+.custom-underline-services{
+    position: relative;
+  display: inline-block;
+
+}
+
+/* 
+'primary':'#010851',
+        'secondary':'#9A7AF1', */
+
+.custom-underline-services::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as needed */
+    width: 100%;
+    height: 5px; /* Adjust thickness */
+    background-color: #9A7AF1; /* Adjust color */
+    border-radius: 5px; /* Optional: Make the underline slightly rounded */
+  }
+
+  

@@ -2,4 +2,11 @@
 body{
   font-family: "Jost", sans-serif;
   /* font-family: "Teko", sans-serif; */
+
+  
+}
+
+::selection {
+  background: #010851; /* Background color of the selection */
+  color: #ffffff; /* Text color of the selection */
 }

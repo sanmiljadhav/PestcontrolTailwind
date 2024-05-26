@@ -3,6 +3,7 @@ import CatLogo from '../../assets/images/cat.jpg'
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import './navbar.css'
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -15,7 +16,7 @@ export default function Navbar() {
     const navItems = [
         {link:"Home", path:"/"},
         {link: "About Us", path:"/about"},
-        {link:"Services", path:"/services"},
+        {link:"Services", path:"/service"},
         {link:"Pricing", path:"/pricing"}
     ]
   return (
@@ -24,15 +25,15 @@ export default function Navbar() {
         <div className='text-lg container mx-auto flex justify-between font-medium'>
             <div className='flex space-x-14'>
 
-                <a href='/' className='text-2xl font-semibold flex items-center space-x-3 text-primary'>
+                <NavLink to='/' className='text-2xl font-semibold flex items-center space-x-3 text-primary'>
                     <img src={CatLogo} className='w-10 inline-block items-center'></img>
                     <span>StaticTalent</span>
-                </a>
+                </NavLink>
 
                 <ul className='md:flex items-center space-x-12 hidden'>
                     {
                         navItems.map(({link, path})=>{
-                            return <a key = {link} href={path} className='hover:text-gray-300 block'>{link}</a>
+                            return <NavLink key = {link} to={path} className='hover:text-gray-300 block'>{link}</NavLink>
                         })
                     }
                 </ul>

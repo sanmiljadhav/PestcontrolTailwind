@@ -25,17 +25,17 @@ export default function Aboutus() {
               pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit.
             </p>
-            <div className="border-2 border-red-500 md:flex space-x-8 ">
+            <div className=" md:flex space-x-8 ">
                 <div className="contact-div md:flex">
                 <FaPhoneAlt className="text-2xl mr-2"/>
                 <span className="text-xl font-semibold">Contact: 9309849433</span>
                 </div>
 
-                <div className="email-div  md:flex">
+                {/* <div className="email-div  md:flex">
                 <MdEmail className="text-2xl mr-2"/>
                 <span className="text-xl font-semibold">Email: sanmil.jadhav0402@gmail.com</span>
 
-                </div>
+                </div> */}
                 
                 
                 
