@@ -6,6 +6,7 @@ import Aboutus from "./components/Aboutus/Aboutus";
 import ServicesPage from "../src/pages/ServicesPage/ServicesPage";
 import PricingPage from "./pages/PricingPage/PricingPage";
 import AboutusPage from "./pages/AboutusPage/AboutusPage";
+import ProblemsPage from "./pages/ProblemsPage/ProblemsPage";
 
 function App() {
   
@@ -20,6 +21,8 @@ function App() {
           <Route path="/service" element={<ServicesPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/about" element={<AboutusPage/>} />
+          <Route path="/problems/:issue" element={<ProblemsPage/>} />
+
 
            
            
